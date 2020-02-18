@@ -1,0 +1,32 @@
+{
+  "name": "plugjs-core",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "description": "Plugjs server core, base on create server loading configs!",
+  "bin": {
+    "plugjs-core": "bin/plugjs-core.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build": "sucrase ./lib -d ./dist --transforms imports"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "sucrase": "^3.12.1"
+  },
+  "dependencies": {
+    "death": "^1.1.0",
+    "dotenv-safe": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "uuid": "^3.4.0",
+    "winston": "^3.2.1"
+  },
+
+  "license": "ISC",
+  "preferGlobal": true,
+  "engines": {
+    "node": ">= 10.0.0"
+  }
+}
