@@ -4,8 +4,7 @@ test/
 
 .env
 .env.example
+.gitignore
 
 nodemon.json
-
-index.js
-server.js
+plug.json

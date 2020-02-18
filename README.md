@@ -22,16 +22,15 @@
 import express from 'express';
 
 // ES6 Modules!
-import { Initializer as Server } from 'plugjs-server';
+import Server from 'plugjs-server';
 
 // CommonJS
-const { Initializer } = require('plugjs-server');
+const { start, register } = require('plugjs-server').default;
 
 // Up Server
 Initializer.Server.start(app);
 
 ```
-
 
 ### Managing the context
 
@@ -41,10 +40,10 @@ Initializer.Server.start(app);
 import express from 'express';
 
 // ES6 Modules!
-import { Initializer as ServerInitializer } from 'plugjs-server';
+import Server from 'plugjs-server';
 
-// or use CommonJS
-// const { Initializer } = require('plugjs-server');
+// CommonJS
+const { start, register } = require('plugjs-server').default;
 
 const app = express();
 app.use(express.json({ limit: '10mb' }))

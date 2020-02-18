@@ -1,12 +1,13 @@
-import express from 'express';
-import { Initializer as Server } from './lib';
+// import express from 'express';
+import Server from './lib';
 
 // const initializer = require('./dist');
 // import ServerInitializer from './lib';
 
-const App = express();
+// const App = express();
 
-ServerInitializer.register('TEST', async ({ context }, next) => {
+
+Server.register('TEST', async ({ context }, next) => {
 
   console.log('TEST', context.values());
 
@@ -14,6 +15,6 @@ ServerInitializer.register('TEST', async ({ context }, next) => {
 });
 
 export default  {
-  Server: ServerInitializer,
-  App
+  Server,
+  App: {}
 }
