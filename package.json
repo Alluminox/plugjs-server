@@ -1,10 +1,10 @@
 {
-  "name": "plugjs-core",
+  "name": "plugjs-server",
   "version": "1.0.0",
   "main": "./dist/index.js",
-  "description": "Plugjs server core, base on create server loading configs!",
+  "description": "Plugjs server, base on create server loading configs!",
   "bin": {
-    "plugjs-core": "bin/plugjs-core.js"
+    "plugjs-core": "bin/plugjs-server.js"
   },
   "scripts": {
     "start": "node index.js",
@@ -23,7 +23,7 @@
   "preferGlobal": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/Alluminox/plugjs-core.git"
+    "url": "https://github.com/Alluminox/plugjs-server.git"
   },
   "engines": {
     "node": ">= 10.0.0"

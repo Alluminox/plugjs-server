@@ -22,10 +22,10 @@
 import express from 'express';
 
 // ES6 Modules!
-import { Initializer as Server } from 'plugjs-core';
+import { Initializer as Server } from 'plugjs-server';
 
 // CommonJS
-const { Initializer } = require('plugjs-core');
+const { Initializer } = require('plugjs-server');
 
 // Up Server
 Initializer.Server.start(app);
@@ -41,10 +41,10 @@ Initializer.Server.start(app);
 import express from 'express';
 
 // ES6 Modules!
-import { Initializer as ServerInitializer } from 'plugjs-core';
+import { Initializer as ServerInitializer } from 'plugjs-server';
 
 // or use CommonJS
-// const { Initializer } = require('plugjs-core');
+// const { Initializer } = require('plugjs-server');
 
 const app = express();
 app.use(express.json({ limit: '10mb' }))
