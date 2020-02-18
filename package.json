@@ -4,7 +4,7 @@
   "main": "./dist/index.js",
   "description": "Plugjs server, base on create server loading configs!",
   "bin": {
-    "plugjs-core": "bin/plugjs-server.js"
+    "plugjs-server": "bin/plugjs-server.js"
   },
   "scripts": {
     "start": "node index.js",
