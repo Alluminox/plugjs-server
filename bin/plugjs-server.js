@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-var lib = require('../dist/index')
+var lib = require('../dist/index').default;
