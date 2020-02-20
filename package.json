@@ -1,6 +1,6 @@
 {
   "name": "plugjs-server",
-  "version": "1.0.8",
+  "version": "1.1.4",
   "main": "./dist/index.js",
   "description": "Plugjs server, base on create server loading configs!",
   "bin": {
